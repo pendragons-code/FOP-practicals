@@ -109,7 +109,6 @@ grade(); // I dun really understand what they want LMAO
 ```
 
 <br><br>part b<br>
-```
 | Test Case | Expected Output |
 |-------------|----------------------|
 | score = 45 | Your grade is E |
@@ -125,7 +124,6 @@ grade(); // I dun really understand what they want LMAO
 | score = 80 | Your grade is B |
 | score = - | Error |
 | score =  | Error |
-```
 
 
 ## Question 5
