@@ -87,13 +87,13 @@ Notes: If there are 2 base values x and y that would mean 2 variables, if there 
 |---|---|---|---|---|
 | 1 | x | 30 | Non numeric 1st number | Error Message, program exit |
 | 2 | 30 | x | Non numeric 2nd number | Error Message, program exit |
-| 3 and 4 | x | y | Non numeric 1st and 2nd number | Error Message, program exit |
-| 5 | 30 | 31 | 1st number is smaller than the second | Output: `1st number is bigger`<br>This behaviour is also true for decimals and negative numbers. |
-| 6 | 31 | 30 | 2nd number is smaller than the first | Output: `2nd number is bigger`<br>This behaviour is also true for decimals and negative numbers. |
-| 7 | 30 | 30 | both numbers are equal | Output: `Both numbers are equal!`<br>This behaviour is also true for decimals and negative numbers. |
-| "1" | 2 | 30 | Non numeric 1st number | Error Message, program exit |
-| 2 | 2 | "1" | Non numeric 2nd number | Error Message, program exit |
-| 3 and 4 | "1" | "1" | Non numeric 1st and 2nd number | Error Message, program exit |
+| 3 | x | y | Non numeric 1st and 2nd number | Error Message, program exit |
+| 4 | 30 | 31 | 1st number is smaller than the second | Output: `1st number is bigger`<br>This behaviour is also true for decimals and negative numbers. |
+| 5 | 31 | 30 | 2nd number is smaller than the first | Output: `2nd number is bigger`<br>This behaviour is also true for decimals and negative numbers. |
+| 6 | 30 | 30 | both numbers are equal | Output: `Both numbers are equal!`<br>This behaviour is also true for decimals and negative numbers. |
+| 7 | "1" | 30 | Non numeric 1st number | Error Message, program exit |
+| 8 | 2 | "1" | Non numeric 2nd number | Error Message, program exit |
+| 9 | "1" | "1" | Non numeric 1st and 2nd number | Error Message, program exit |
 
 ## Question 4
 part a<br>
