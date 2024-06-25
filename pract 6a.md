@@ -127,5 +127,19 @@ grade(); // I dun really understand what they want LMAO
 
 
 ## Question 5
-part a<br>
+part a
+```
+const input = require("readline-sync");
+function checkIncrement(serviceYrs, salary) {
+	// not checking if the numbers are float of integers since the question never said anything about it
+	if(serviceYrs <= 0 || salary <= 0 || isNaN(serviceYrs) || isNaN(salary) || serviceYrs >= 10 && salary < 1000) return console.log("Sorry invalid input(s). Please try again. Good bye! ");
+	if(salary < 1000) return console.log("Congratulation, your increment is : $100");
+	if(salary < 2000) return console.log("Congratulation, your increment is : $200");
+	return console.log("Congratulation, your increment is : $300");
+}
+
+let yrsOfService = parseFloat(input.question("Please enter you year(s) of service: "));
+let salaryAmt = parseFloat(input.question("Please enter your salary: "));
+checkIncrement(yrsOfService, salaryAmt);
+```
 <br><br>part b<br>
