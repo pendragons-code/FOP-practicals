@@ -142,4 +142,21 @@ let yrsOfService = parseFloat(input.question("Please enter you year(s) of servic
 let salaryAmt = parseFloat(input.question("Please enter your salary: "));
 checkIncrement(yrsOfService, salaryAmt);
 ```
-<br><br>part b<br>
+<br><br>part b
+```
+const input = require("readline-sync");
+function checkIncrement(serviceYrs, salary) {
+	// not checking if the numbers are float of integers since the question never said anything about it
+	if(serviceYrs <= 0 || salary <= 0 || isNaN(serviceYrs) || isNaN(salary)) return console.log("Sorry invalid input(s). Please try again. Good bye! ");
+	let sum = 100;
+	if(serviceYrs >= 10) sum += 100;
+	if(salary < 2000 && salary >= 1000) sum += 100;
+	if(salary >= 2000) sum += 200;
+	return console.log(sum);
+}
+
+let yrsOfService = parseFloat(input.question("Please enter you year(s) of service: "));
+let salaryAmt = parseFloat(input.question("Please enter your salary: "));
+checkIncrement(yrsOfService, salaryAmt);
+```
+<br>
