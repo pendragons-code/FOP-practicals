@@ -180,20 +180,27 @@ console.log(checkNUmber(numberFromUserInput));
 
 ## Question 8
 ```
+const input = require("readline-sync");
+const askRank = input.question("Please enter your rank: ");
+
 function PrizeMoney(rank) {
+	// not required but added for fun
+	if(isNaN(rank) || rank % 1 !== 0 || rank <= 0) return "BRO WHAT THE HELLLLLL PLS VALID RANK BRO 💀!"
 	switch(rank){
-		case 1:
+		case "1":
 			return "Your prize money is $1000;";
-		case 2:
+		case "2":
 			return "Your prize money is $800;";
-		case 3:
+		case "3":
 			return "Your prize money is $700;";
-		case 4:
+		case "4":
 			return "Your prize money is $400;";
-		case 5:
+		case "5":
 			return "Your prize money is $300;";
 		default:
 			return "Your prize money is $20;";
 	}
 }
+
+console.log(PrizeMoney(askRank));
 ```
