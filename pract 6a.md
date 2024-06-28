@@ -179,3 +179,21 @@ console.log(checkNUmber(numberFromUserInput));
 ```
 
 ## Question 8
+```
+function PrizeMoney(rank) {
+	switch(rank){
+		case 1:
+			return "Your prize money is $1000;";
+		case 2:
+			return "Your prize money is $800;";
+		case 3:
+			return "Your prize money is $700;";
+		case 4:
+			return "Your prize money is $400;";
+		case 5:
+			return "Your prize money is $300;";
+		default:
+			return "Your prize money is $20;";
+	}
+}
+```
