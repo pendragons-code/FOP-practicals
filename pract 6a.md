@@ -160,3 +160,22 @@ let salaryAmt = parseFloat(input.question("Please enter your salary: "));
 checkIncrement(yrsOfService, salaryAmt);
 ```
 <br>
+
+## Question 7
+```
+const input = require("readline-sync");
+
+function checkNUmber(numberFromUserInput) {
+	if(numberFromUserInput % 1 !== 0) return "THIS IS NOT AN INTEGER BRO 💀!";
+	let divisiblyBySix =  numberFromUserInput % 6 == 0;
+	let divisiblyByFive = numberFromUserInput % 5 == 0;
+	if(divisiblyByFive && divisiblyBySix) return `${numberFromUserInput} is divisible by both 5 and 6.`; 
+	if(divisiblyByFive || divisiblyBySix) return `${numberFromUserInput} is divisible by 5 or 6, but not both.`; 
+	return `${numberFromUserInput} is not divisible by either 5 or 6.`;
+}
+
+let numberFromUserInput = parseInt(input.question("Enter an integer: "));
+console.log(checkNUmber(numberFromUserInput));
+```
+
+## Question 8
